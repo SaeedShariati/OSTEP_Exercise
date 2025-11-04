@@ -42,7 +42,7 @@ int main(int argc, char* argv[]){
     pid_t pids[2];
     int fd1[2];
     int fd2[2];
-    int fd3[2]; //for communication between parent and Process 1.
+    int fd3[2]; //for communication between parent and Process 2.
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
     CPU_SET(0,&cpuset);
