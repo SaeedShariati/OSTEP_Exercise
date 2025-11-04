@@ -7,8 +7,7 @@
 int main(int argc, char* argv[]){
 
     pid_t pids[2];
-    int fd[2];
-    int t = 0;
+    int fd[2]; //pipe
     close(STDIN_FILENO);
     close(STDOUT_FILENO);
     if(pipe(fd)<0)
