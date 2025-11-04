@@ -94,7 +94,7 @@ int main(int argc, char* argv[]){
 
                 //rate is for a round trip, so 2 context switches and 4 system calls
                 double rate = (double)time/((double)iterations);
-                int written = write(fd3[1],(void*)&rate,sizeof(double));
+                write(fd3[1],(void*)&rate,sizeof(double));
 
                 close(fd3[1]);
                 close(fd2[0]);
