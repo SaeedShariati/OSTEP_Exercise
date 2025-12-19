@@ -8,7 +8,7 @@
 #include<pthread.h>
 #include<sys/time.h>
 
-
+//returns the length of the interval between start and end in microseconds
 double get_interval(struct timeval* start,struct timeval* end){
     long seconds= end->tv_sec - start->tv_sec;
     long microseconds = end->tv_usec - start->tv_usec;
