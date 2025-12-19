@@ -23,7 +23,7 @@ int main(int argc,char* argv[]){
     }
     microseconds += seconds*1000000;
     double time_per_syscall = ((double)microseconds)/iterations;
-    printf("microseconds %d\n",microseconds);
+    printf("microseconds %ld\n",microseconds);
     printf("syscalls     %d\n",iterations);
     printf("time per syscall in microseconds =%f\n",time_per_syscall);
 
